@@ -1,0 +1,14 @@
+:root {
+  /* FONT */
+  --font-catamaran: "Catamaran", sans-serif;
+  --font-montserrat: "Montserrat", sans-serif;
+  --font-montserratAlternates: "Montserrat Alternates", sans-serif;
+
+  /* COLOR */
+  --red-300: #f35444;
+  --gray-100: #f5f5f5;
+  --gray-300: #838383;
+  --gray-600: #333333;
+  --blue-900: #151823;
+  --blue-700: #1b2032;
+}
