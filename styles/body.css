@@ -707,8 +707,11 @@
 .ourprofessionals-wrapper .ourprofessionals-wrapper_person-img {
   height: 500px;
   position: relative;
-  @media only screen and (min-width: 576px) and (max-width: 992px) {
-    height: 250px;
+}
+
+@media only screen and (min-width: 576px) and (max-width: 992px) {
+  .ourprofessionals-wrapper .ourprofessionals-wrapper_person-img.last-child {
+    height: 1000px;
   }
 }
 
@@ -746,6 +749,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.ourprofessionals-wrapper
+  .ourprofessionals-wrapper_person-img_box-child
+  .wrap-icon:hover {
+  background-color: #fff;
+  color: #000;
 }
 
 .ourprofessionals-wrapper .ourprofessionals-wrapper_text {
