@@ -106,8 +106,9 @@
 
 .whoweare-wrapper_text .t2 {
   font-size: 2.3rem;
-  font-weight: 600;
+  font-weight: bolder;
   margin: 1rem 0 1.2rem 0;
+  font-family: var(--font-montserratAlternates);
 }
 
 .whoweare-wrapper_text .t3 {
@@ -227,12 +228,14 @@
 
 .news-box .news-box_content .news-box_text .t1 {
   font-size: 1.3rem;
-  font-weight: 600;
+  font-weight: 700;
+  font-family: var(--font-catamaran);
 }
 
 .news-box .news-box_content .news-box_text .t2 {
   text-transform: uppercase;
   font-size: 0.8rem;
+  font-family: var(--font-montserrat);
 }
 
 .news-box .news-box_content .news-box_text {
@@ -325,6 +328,11 @@
 
 .takeiteasy-wrapper .t3 {
   color: #fff;
+  position: relative;
+  z-index: 1;
+  @media screen and (min-width: 992px) {
+    margin: 0 20rem;
+  }
   font-family: var(--font-catamaran);
 }
 
@@ -486,10 +494,12 @@
   font-weight: 600;
   font-size: 1.2rem;
   margin: 1rem 0;
+  font-family: var(--font-catamaran);
 }
 
 .whatweoffer-wrapper .whatweoffer-box .whatweoffer-box_content .t2 {
   color: var(--gray-300);
+  font-family: var(--font-catamaran);
 }
 
 .whatweoffer-wrapper
@@ -505,6 +515,15 @@
   background-color: var(--red-300);
 }
 
+.whatweoffer-wrapper
+  .whatweoffer-box
+  .whatweoffer-box_content
+  .whatweoffer-box_icon
+  img {
+  width: auto;
+  height: 30px;
+}
+
 .whatweoffer-wrapper .whatweoffer-box .whatweoffer-box_learnmore {
   margin-top: 1px;
   background-color: var(--gray-100);
@@ -514,6 +533,7 @@
   font-size: 0.9rem;
   padding-right: 1rem;
   text-transform: uppercase;
+  font-family: var(--font-catamaran);
 }
 
 /* A FEW STEPS FOR YOUR SUCCESS */
@@ -797,6 +817,11 @@
   }
 }
 
+.pakage-wrapper .pakage-wrapper_content .pakage-wrapper_content-box {
+  position: relative;
+  z-index: 2;
+}
+
 .pakage-wrapper .pakage-wrapper_content .pakage-wrapper_content-box.margin {
   @media only screen and (min-width: 992px) {
     margin-top: 10rem;
@@ -806,6 +831,7 @@
 .pakage-wrapper .pakage-wrapper_content .pakage-wrapper_content-box > p {
   font-size: 1.5rem;
   font-weight: 600;
+  font-family: var(--font-catamaran);
 }
 
 .pakage-wrapper
@@ -813,7 +839,7 @@
   .pakage-wrapper_content-box
   .pakage-wrapper_content-box_content
   .pakage-wrapper_content-box_content-top {
-  padding: 1.2rem 3rem;
+  padding: 3rem 3rem;
   background-color: var(--gray-100);
   border-top: 5px solid var(--red-300);
 }
@@ -837,8 +863,9 @@
   .pakage-wrapper_content-box_content-top-list
   .pakage-wrapper_content-box_content-top-item
   p {
-  color: var(--gray-600);
-  font-size: 1.1rem;
+  color: var(--gray-300);
+  font-size: 1.2rem;
+  font-family: var(--font-catamaran);
 }
 
 .pakage-wrapper
@@ -886,7 +913,7 @@
   position: absolute;
   top: 65%;
   left: 16%;
-  z-index: -1;
+  z-index: 1;
 }
 
 /* CONTACT EMAIL */
@@ -897,7 +924,6 @@
   }
   background-color: var(--red-300);
   position: relative;
-  z-index: -2;
 }
 
 .contactemail-wrapper_text {
@@ -1035,6 +1061,7 @@
   .someusefulinfo-box_content-text {
   padding: 2rem;
   background-color: #fff;
+  font-family: var(--font-catamaran);
 }
 
 .someusefulinfo-wrapper
@@ -1053,6 +1080,23 @@
   p {
   margin-top: 2rem;
   color: var(--gray-300);
+}
+
+.someusefulinfo-wrapper
+  .someusefulinfo-box
+  .someusefulinfo-box_content
+  .someusefulinfo-box_content-text
+  h3 {
+  transition: all 0.2s ease;
+}
+
+.someusefulinfo-wrapper
+  .someusefulinfo-box
+  .someusefulinfo-box_content
+  .someusefulinfo-box_content-text
+  h3:hover {
+  transition: all 0.2s ease;
+  color: var(--red-300);
 }
 
 .someusefulinfo-wrapper

@@ -86,3 +86,11 @@
 .button.btn-bg-red:hover {
   background-color: #000 !important;
 }
+
+.hidden {
+  display: none !important;
+}
+
+.show {
+  display: block !important;
+}

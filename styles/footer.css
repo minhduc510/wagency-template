@@ -9,12 +9,14 @@ footer .footer-top {
 
 footer .footer-top h3 {
   font-size: 1.6rem;
+  font-weight: 700;
 }
 
 footer .footer-top .footer-top_col-content {
   padding-top: 1.5rem;
   margin-top: 1.5rem;
   border-top: 1px solid var(--gray-300);
+  font-family: var(--font-catamaran);
 }
 
 footer .footer-top .footer-top_col-content > p {
@@ -30,6 +32,33 @@ footer
   padding-left: 1.5rem;
   position: relative;
   margin: 0.8rem 0;
+}
+
+footer
+  .footer-top
+  .footer-top_col-content
+  .footer-top_col1-content-contact
+  a:hover {
+  color: var(--red-300);
+}
+
+footer .footer-top .footer-top_col-content .footer-top_col2-content-news a {
+  display: block;
+  margin-top: 1rem;
+  padding-right: 10rem;
+  font-family: var(--font-catamaran);
+}
+
+footer .footer-top .footer-top_col-content .footer-top_col2-content-news span {
+  font-family: var(--font-catamaran);
+}
+
+footer
+  .footer-top
+  .footer-top_col-content
+  .footer-top_col2-content-news
+  a:hover {
+  color: var(--red-300);
 }
 
 footer
@@ -64,7 +93,20 @@ footer .footer-top .footer-top_col-content .footer-top_col-content_btn {
   padding: 0.8rem;
   border-radius: 20px;
   text-align: center;
+  border: 1px solid var(--gray-300);
+}
+
+footer .footer-top .footer-top_col-content .footer-top_col-content_btn.email {
   border: 1px solid var(--red-300);
+  transition: all 0.3s ease-in;
+}
+
+footer
+  .footer-top
+  .footer-top_col-content
+  .footer-top_col-content_btn.email:hover {
+  background-color: var(--red-300);
+  cursor: pointer;
 }
 
 footer .footer-bottom {

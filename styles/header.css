@@ -41,6 +41,7 @@ header .header-top .header-top_social .header-top_social-box:hover {
 
 header .header-bottom {
   padding: 1.5rem 0 0rem 0;
+  font-family: var(--font-catamaran);
 }
 
 header .header-bottom .menu .menu-item {
@@ -134,10 +135,90 @@ header .header-menu {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid red;
+  border: 1px solid var(--red-300);
   width: 40px;
   height: 40px;
   font-size: 1.4rem;
-  color: red;
+  color: var(--red-300);
   background-color: #fff;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 576px) {
+  .header-bottom {
+    left: 55%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .header-bottom {
+    left: 0;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .overflow {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 900;
+    background-color: #000000d5;
+    animation: show 0.5s ease;
+    display: none;
+  }
+
+  .header-bottom {
+    background-color: rgb(255, 121, 121);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 999;
+    animation: fadeLeft 0.5s ease;
+  }
+
+  .header-bottom .icon {
+    font-size: 1.3rem;
+    margin-left: 1rem;
+    cursor: pointer;
+    color: #fff;
+  }
+
+  .header-bottom .menu {
+    display: block !important;
+    width: 100%;
+  }
+
+  .header-bottom .menu .menu-item {
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff !important;
+    font-size: 1.2rem !important;
+    padding: 1rem 1.2rem !important;
+  }
+
+  .header-bottom .menu .menu-item.input-search {
+    background-color: #fff;
+    margin: 0 1rem;
+    border-radius: 20px;
+  }
+
+  .header-bottom .menu .menu-item.input-search i {
+    color: #000;
+  }
+
+  .header-bottom .menu .menu-item .menu-child {
+    width: 100%;
+    left: 0;
+    top: 95% !important;
+    border-radius: initial !important;
+    color: var(--red-300);
+  }
+
+  .header-bottom .menu .menu-item .menu-child li a {
+    font-size: 1.2rem;
+  }
 }
