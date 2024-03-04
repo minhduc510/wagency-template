@@ -2,6 +2,7 @@ const btnMenu = document.querySelector('.header-menu')
 const overflow = document.querySelector('.overflow')
 const menuBottom = document.querySelector('.header-bottom')
 const deleteBtn = document.querySelector('.header-bottom .icon')
+const menuItems = document.querySelectorAll('.menu-item')
 
 function hideMenuMobile() {
     overflow.classList.remove('show')
@@ -20,3 +21,10 @@ btnMenu.addEventListener('click', function () {
 
 overflow.addEventListener('click', hideMenuMobile)
 deleteBtn.addEventListener('click', hideMenuMobile)
+
+menuItems.forEach(item => {
+    item.onclick = function () {
+        const menuChild = item.querySelector('.menu-child')
+        menuChild.style.display = menuChild.style.display === 'none' ? 'block' : 'none'
+    }
+})

@@ -1,10 +1,15 @@
 .background {
   position: relative;
   height: 1000px;
+  background-image: url("../images/home2_bak-slide_1920x1060.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
   @media only screen and (max-width: 992px) {
     height: 700px;
+    padding-top: 100px;
   }
   overflow: hidden;
+  padding-top: 174px;
 }
 
 .background img {
@@ -21,6 +26,7 @@
   height: 400px;
   top: 38%;
   animation: fadeRight 1s ease;
+  z-index: 1;
 }
 
 .background .img-lazy.ipad {
@@ -30,6 +36,7 @@
   left: 10%;
   top: 55%;
   animation: fadeRight 1.3s ease;
+  z-index: 1;
 }
 
 .background .img-lazy.bush {
@@ -39,6 +46,7 @@
   left: 65%;
   top: 40%;
   animation: fadeLeft 1s ease;
+  z-index: 1;
 }
 
 .background .img-lazy.pen {
@@ -48,6 +56,7 @@
   left: 60%;
   top: 65%;
   animation: fadeLeft 1.3s ease;
+  z-index: 1;
 }
 
 .background .img-lazy.headphones {
